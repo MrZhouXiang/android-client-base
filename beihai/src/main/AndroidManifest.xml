@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="puyuntech.com.beihai">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"></uses-permission>
+
+    <application
+        android:name=".app.APP"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ui.activity.login.LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@style/LoginTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--vpn连接activity-->
+        <activity
+            android:name=".http.vpn.ToyVpnClient"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_main" />
+        <activity
+            android:name=".ui.activity.main.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_main"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".ui.activity.main.MainActivityV2"
+            android:label="@string/title_activity_main_activity_v2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activity.main.ADSDeatilActivity"
+            android:label="@string/title_activity_deatil"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activity.main.MainActivityV3"
+            android:label="@string/title_activity_main_activity_v3"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activity.addrenkou.AddRenKouActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activity.renwu.AddRenWuActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activity.addrenkou.AddRenKou2Activity"
+            android:label="@string/title_activity_add_ren_kou"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.camera.CameraOrAlbumActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.renwu.RenWuActivity"
+            android:label="@string/title_activity_ren_wu"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activity.shijian.ShiJianActivity"
+            android:label="@string/title_activity_shi_jian"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activity.renwu.RenWuDeatilActivity"
+            android:label="@string/title_activity_shi_jian"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.activity.renwu.HuiFuActivity"
+            android:label="@string/title_activity_shi_jian"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!--<activity-->
+        <!--android:name=".ui.activity.login.LoginActivityV3"-->
+        <!--android:configChanges="orientation|keyboardHidden|screenSize"-->
+        <!--android:label="@string/title_activity_login_activity_v3"-->
+        <!--android:theme="@style/FullscreenTheme"></activity>-->
+    </application>
+
+</manifest>

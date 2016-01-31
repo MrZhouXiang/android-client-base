@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingLeft="@dimen/dp_10"
+    android:paddingTop="@dimen/dp_8">
+
+    <TextView
+        android:id="@+id/huifu_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:maxEms="10"
+        android:text="回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复回复"
+        android:textColor="@color/color333"
+        android:textSize="@dimen/sp_14" />
+
+    <TextView
+        android:id="@+id/time_lv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="@dimen/dp_7"
+        android:layout_marginRight="@dimen/dp_12"
+        android:text="2015-10-15 10:30"
+        android:textColor="@color/color999"
+        android:textSize="@dimen/sp_11" />
+
+    <View
+        android:id="@+id/line_show"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0.5"
+        android:layout_below="@+id/huifu_tv"
+        android:background="@color/split_line" />
+</RelativeLayout>

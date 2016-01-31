@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!--<style name="FullScreenTheme" parent="@android:style/Theme.NoTitleBar.Fullscreen">-->
+        <!--<item name="android:windowBackground">@android:color/transparent</item>-->
+        <!--<item name="android:colorBackgroundCacheHint">@null</item>-->
+        <!--<item name="android:windowNoTitle">true</item>-->
+        <!--<item name="android:windowIsTranslucent">true</item>-->
+        <!--<item name="miui:windowTranslucentStatus">transparentDark</item>-->
+    <!--</style>-->
+
+    <!--分享底部弹出样式-->
+    <style name="FullScreenTheme" parent="@android:style/Theme.NoTitleBar.Fullscreen">
+        <item name="android:colorBackgroundCacheHint" tools:targetApi="eclair">@null</item>
+
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <!--<item name="android:windowIsFloating">true</item>-->
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+
+        <!--<item name="miui:windowTranslucentStatus">transparentDark</item>-->
+
+    </style>
+
+
+</resources>

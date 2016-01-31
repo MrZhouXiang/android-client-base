@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="SwipeBackLayout">
+        <item name="edge_size">20dip</item>
+        <item name="shadow_left">@color/dark__40</item>
+        <item name="shadow_right">@drawable/shadow_right</item>
+        <item name="shadow_bottom">@drawable/shadow_bottom</item>
+    </style>
+
+    <style name="SwipBackLayoutLibary" parent="@style/Theme.AppCompat.Light.NoActionBar" />
+
+    <style name="a" parent="@android:style/Theme" />
+
+    <style name="test" parent="@style/Theme.AppCompat.Light.NoActionBar" />
+
+    <style name="mystyle" parent="@style/Theme.AppCompat" />
+
+</resources>
